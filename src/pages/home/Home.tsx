@@ -30,9 +30,12 @@ function Home() {
   const [showHome, setShowHome] = useState(true);
 
   return (
-    <div>
+    <div>  
       <Header />
-      <h1>Home</h1>
+      <Sidebar />
+      {showHome && < Home />}
+      {showPatient && < Patient />}
+      {showBuyer && < Buyer />}
     </div>
   );
 }
